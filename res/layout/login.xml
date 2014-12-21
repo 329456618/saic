@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:gravity="center"
+        android:text="手持式条码数据采集系统"
+        android:textSize="@dimen/textsize_1" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:paddingBottom="30dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_weight="0"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical"
+                android:text="员工号："
+                android:textSize="@dimen/textsize_2" />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:gravity="left|center_vertical"
+                android:hint="员工号"
+                android:textSize="@dimen/textsize_2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_marginTop="10dip"
+            android:layout_weight="0"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical"
+                android:text="密  码："
+                android:textSize="@dimen/textsize_2" />
+
+            <EditText
+                android:id="@+id/paw"
+                android:layout_width="0dip"
+                android:password="true"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:gravity="left|center_vertical"
+                android:hint="密  码"
+                android:textSize="@dimen/textsize_2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_marginTop="10dip"
+            android:layout_weight="0" >
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="登录"
+                android:textSize="@dimen/textsize_2" />
+
+            <Button
+                android:id="@+id/endapp"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dip"
+                android:layout_marginRight="20dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="退出"
+                android:textSize="@dimen/textsize_2" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_marginLeft="20dip"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="日期时间："
+            android:textSize="@dimen/textsize_1" />
+
+        <TextView
+            android:id="@+id/timer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:text="2014-12-02 02:38:45"
+            android:textSize="@dimen/textsize_1"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/versionName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dip"
+            android:gravity="right"
+            android:text="V 1.2c"
+            android:textSize="@dimen/textsize_1"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>
